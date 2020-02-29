@@ -33,32 +33,36 @@ void makeStartupWindow() {
 	font.lfHeight = 25;
 	wcscpy_s(font.lfFaceName, L"微软雅黑 Light");
 	font.lfQuality = ANTIALIASED_QUALITY;
+	while (1) {
+		BeginBatchDraw();
+		//新建游戏按钮
+		StartupWindowButton[0].setbuttonstyle(WIN_X / 2 - textwidth(NewGame) / 2, WIN_Y / 2 - 10, 25, 5);
+		StartupWindowButton[0].setkeyrespond((wchar_t)"N");
+		StartupWindowButton[0].drawbutton(StartupMsg, NewGame, true);
 
-	//新建游戏按钮
-	StartupWindowButton[0].setbuttonstyle(WIN_X / 2 - textwidth(NewGame) / 2, WIN_Y / 2 - 10, 25, 5);
-	StartupWindowButton[0].setkeyrespond((wchar_t)"N");
-	StartupWindowButton[0].drawbutton(StartupMsg, NewGame,true);
+		//打开游戏按钮
+		StartupWindowButton[1].setbuttonstyle(WIN_X / 2 - textwidth(OpenGame) / 2, WIN_Y / 2 - 20, 25, 5);
+		StartupWindowButton[1].setkeyrespond((wchar_t)"O");
+		StartupWindowButton[1].drawbutton(StartupMsg, OpenGame, true);
+
+		//资讯按钮
+		StartupWindowButton[2].setbuttonstyle(WIN_X / 2 - textwidth(News) / 2, WIN_Y / 2 - 30, 25, 5);
+		StartupWindowButton[2].setkeyrespond((wchar_t)"P");
+		StartupWindowButton[2].drawbutton(StartupMsg, News, true);
+
+		//退出游戏按钮
+		StartupWindowButton[3].setbuttonstyle(WIN_X / 2 - textwidth(ExitGame) / 2, WIN_Y / 2 - 40, 25, 5);
+		StartupWindowButton[3].setkeyrespond((wchar_t)"E");
+		StartupWindowButton[3].drawbutton(StartupMsg, ExitGame, true);
+
+		//版本按钮
+		settextcolor(WHITE);
+		settextstyle(15, 0, L"Verdana");
+		outtextxy(25, 450, L"V1.0");
+
+		EndBatchDraw();
+	}
 	
-	//打开游戏按钮
-	StartupWindowButton[0].setbuttonstyle(WIN_X / 2 - textwidth(OpenGame) / 2, WIN_Y / 2 - 20, 25, 5);
-	StartupWindowButton[0].setkeyrespond((wchar_t)"N");
-	StartupWindowButton[0].drawbutton(StartupMsg, OpenGame, true);
-	
-	//资讯按钮
-	StartupWindowButton[0].setbuttonstyle(WIN_X / 2 - textwidth(News) / 2, WIN_Y / 2 - 30, 25, 5);
-	StartupWindowButton[0].setkeyrespond((wchar_t)"N");
-	StartupWindowButton[0].drawbutton(StartupMsg, News, true);
-
-	//退出游戏按钮
-	StartupWindowButton[0].setbuttonstyle(WIN_X / 2 - textwidth(ExitGame) / 2, WIN_Y / 2 - 40, 25, 5);
-	StartupWindowButton[0].setkeyrespond((wchar_t)"N");
-	StartupWindowButton[0].drawbutton(StartupMsg, ExitGame, true);
-
-	//版本按钮
-	settextcolor(WHITE);
-	settextstyle(15, 0, L"Verdana");
-	outtextxy(25, 450, L"V1.0");
-
 }
 
 void makeWindow() {

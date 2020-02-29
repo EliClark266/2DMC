@@ -1,42 +1,9 @@
 ﻿  Button.cpp
-E:\Game\Game\Button.cpp(39,1): error C2511: “bool CButton::drawbutton(MOUSEMSG &,wchar_t [],bool,wchar_t)”:“CButton”中没有找到重载的成员函数
-E:\Game\Game\Button.h(8): message : 参见“CButton”的声明
-E:\Game\Game\Button.cpp(40,16): error C2597: 对非静态成员“CButton::font”的非法引用
-E:\Game\Game\Button.cpp(40,20): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
-D:\VS2019\VC\Tools\MSVC\14.24.28314\include\easyx.h(258,6): message : 可能是“void settextstyle(const LOGFONT *)”
-E:\Game\Game\Button.cpp(40,20): message : 尝试匹配参数列表“(LOGFONT CButton::* )”时
-E:\Game\Game\Button.cpp(43,15): error C2597: 对非静态成员“CButton::bkcolor”的非法引用
-E:\Game\Game\Button.cpp(44,31): error C2597: 对非静态成员“CButton::x”的非法引用
-E:\Game\Game\Button.cpp(44,31): error C3867: “CButton::x”: 非标准语法；请使用 "&" 来创建指向成员的指针
-E:\Game\Game\Button.cpp(44,50): error C2597: 对非静态成员“CButton::spacing_width”的非法引用
-E:\Game\Game\Button.cpp(44,50): error C3867: “CButton::spacing_width”: 非标准语法；请使用 "&" 来创建指向成员的指针
-E:\Game\Game\Button.cpp(45,32): error C2597: 对非静态成员“CButton::y”的非法引用
-E:\Game\Game\Button.cpp(45,32): error C3867: “CButton::y”: 非标准语法；请使用 "&" 来创建指向成员的指针
-E:\Game\Game\Button.cpp(45,52): error C2597: 对非静态成员“CButton::spacing_height”的非法引用
-E:\Game\Game\Button.cpp(45,52): error C3867: “CButton::spacing_height”: 非标准语法；请使用 "&" 来创建指向成员的指针
-E:\Game\Game\Button.cpp(46,17): error C2597: 对非静态成员“CButton::x”的非法引用
-E:\Game\Game\Button.cpp(46,20): error C2597: 对非静态成员“CButton::y”的非法引用
-E:\Game\Game\Button.cpp(48,5): error C2597: 对非静态成员“CButton::x”的非法引用
-E:\Game\Game\Button.cpp(48,5): error C3867: “CButton::x”: 非标准语法；请使用 "&" 来创建指向成员的指针
-E:\Game\Game\Button.cpp(48,5): error C2568: “>”: 无法解析函数重载
-E:\Game\Game\Button.cpp(48,5): error C2597: 对非静态成员“CButton::y”的非法引用
-E:\Game\Game\Button.cpp(48,5): error C3867: “CButton::y”: 非标准语法；请使用 "&" 来创建指向成员的指针
-E:\Game\Game\Button.cpp(50,16): error C2597: 对非静态成员“CButton::respondcolor”的非法引用
-E:\Game\Game\Button.cpp(51,18): error C2597: 对非静态成员“CButton::x”的非法引用
-E:\Game\Game\Button.cpp(51,21): error C2597: 对非静态成员“CButton::y”的非法引用
-E:\Game\Game\Button.cpp(60,5): error C2671: “CButton::drawbutton”: 静态成员函数没有“this”指针
-E:\Game\Game\Button.cpp(62,16): error C2597: 对非静态成员“CButton::respondcolor”的非法引用
-E:\Game\Game\Button.cpp(63,18): error C2597: 对非静态成员“CButton::x”的非法引用
-E:\Game\Game\Button.cpp(63,21): error C2597: 对非静态成员“CButton::y”的非法引用
-E:\Game\Game\Button.cpp(67,15): error C2597: 对非静态成员“CButton::textcolor”的非法引用
-E:\Game\Game\Button.cpp(68,29): error C2597: 对非静态成员“CButton::x”的非法引用
-E:\Game\Game\Button.cpp(68,29): error C3867: “CButton::x”: 非标准语法；请使用 "&" 来创建指向成员的指针
-E:\Game\Game\Button.cpp(68,29): error C2597: 对非静态成员“CButton::spacing_width”的非法引用
-E:\Game\Game\Button.cpp(68,29): error C3867: “CButton::spacing_width”: 非标准语法；请使用 "&" 来创建指向成员的指针
-E:\Game\Game\Button.cpp(68,29): error C2568: “+”: 无法解析函数重载
-E:\Game\Game\Button.cpp(68,49): error C2597: 对非静态成员“CButton::y”的非法引用
-E:\Game\Game\Button.cpp(68,49): error C3867: “CButton::y”: 非标准语法；请使用 "&" 来创建指向成员的指针
-E:\Game\Game\Button.cpp(68,49): error C2597: 对非静态成员“CButton::spacing_height”的非法引用
-E:\Game\Game\Button.cpp(68,49): error C3867: “CButton::spacing_height”: 非标准语法；请使用 "&" 来创建指向成员的指针
-E:\Game\Game\Button.cpp(68,49): error C2568: “+”: 无法解析函数重载
-E:\Game\Game\Button.cpp(68,55): error C2661: “outtextxy”: 没有重载函数接受 2 个参数
+  Game.cpp
+E:\Game\Game\init.h(39,51): warning C4302: “类型强制转换”: 从“const char *”到“wchar_t”截断
+E:\Game\Game\init.h(44,51): warning C4302: “类型强制转换”: 从“const char *”到“wchar_t”截断
+E:\Game\Game\init.h(49,51): warning C4302: “类型强制转换”: 从“const char *”到“wchar_t”截断
+E:\Game\Game\init.h(54,51): warning C4302: “类型强制转换”: 从“const char *”到“wchar_t”截断
+  正在生成代码...
+  LINK : 没有找到 E:\Game\Game\Debug\Game.exe 或上一个增量链接没有生成它；正在执行完全链接
+  Game.vcxproj -> E:\Game\Game\Debug\Game.exe

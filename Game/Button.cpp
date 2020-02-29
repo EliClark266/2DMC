@@ -35,7 +35,7 @@ void CButton::setbuttoncolor(COLORREF bkcolor, COLORREF respondcolor, COLORREF t
 
 
 
-bool CButton::drawbutton(MOUSEMSG& m_msg, wchar_t text[], bool key_respond, wchar_t ch)
+bool CButton::drawbutton(MOUSEMSG& m_msg, LPCTSTR text, bool key_respond, wchar_t ch)
 {
 	settextstyle(&font);
 	setbkmode(TRANSPARENT);
