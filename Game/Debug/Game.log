@@ -1,9 +1,0 @@
-﻿  Button.cpp
-  Game.cpp
-E:\Game\Game\init.h(39,51): warning C4302: “类型强制转换”: 从“const char *”到“wchar_t”截断
-E:\Game\Game\init.h(44,51): warning C4302: “类型强制转换”: 从“const char *”到“wchar_t”截断
-E:\Game\Game\init.h(49,51): warning C4302: “类型强制转换”: 从“const char *”到“wchar_t”截断
-E:\Game\Game\init.h(54,51): warning C4302: “类型强制转换”: 从“const char *”到“wchar_t”截断
-  正在生成代码...
-  LINK : 没有找到 E:\Game\Game\Debug\Game.exe 或上一个增量链接没有生成它；正在执行完全链接
-  Game.vcxproj -> E:\Game\Game\Debug\Game.exe
